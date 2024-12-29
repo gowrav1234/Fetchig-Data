@@ -1,0 +1,234 @@
+body{
+    background-color: rosybrown;
+}
+/* General Styling for Navigation */
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    position: relative;
+    font-size: 1rem;
+    padding: 5px 0;
+    color: #333; 
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for text color */
+.nav-link:hover {
+    color: rosybrown 
+}
+
+/* Underline effect */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: rosybrown; 
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s ease; 
+}
+
+/* On hover, underline expands from left to right */
+.nav-link:hover::after {
+    width: 100%; 
+}
+.bnner-p{
+    color: black;
+    font-size: x-large;
+}
+.section {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.product-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 16px;
+    color: #777;
+}
+
+/* Contact Form */
+.contact-section {
+    
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.contact-section form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section form input,
+.contact-section form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-section form button {
+    background-color: #e67e22;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.contact-section form button:hover {
+    background-color: #d35400;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .product-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .cta-button {
+        font-size: 16px;
+        padding: 12px 30px;
+    }
+}
+.link-underline-dark {
+    text-decoration: underline;
+    color: #333;  
+}
+
+
+/* Styling for the icons section */
+.icons {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.icons h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Icons container styling */
+.icons div {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+/* Font Awesome Icon Styling */
+.icons i {
+    font-size: 50px;
+    color: #333; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for icons */
+.icons i:hover {
+    transform: scale(1.2); 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); 
+}
+
+/* Specific hover effects for each icon */
+.fa-square-facebook:hover {
+    color: #3b5998; 
+}
+.fa-square-instagram:hover {
+    color: #E1306C; 
+}
+
+.fa-twitter:hover {
+    color: #1DA1F2;
+}

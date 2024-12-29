@@ -1,0 +1,165 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* General Styling for Navigation */
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  position: relative;
+  font-size: 1rem;
+  padding: 5px 0;
+  color: #333; /* Default color of the text */
+  transition: color 0.3s ease;
+}
+
+
+.nav-link:hover {
+  color: rosybrown; 
+}
+
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: rosybrown; 
+  left: 0;
+  bottom: 0;
+  transition: width 0.3s ease; 
+}
+
+.nav-link:hover::after {
+  width: 100%; 
+}
+
+
+/* Container for the entire page */
+.container-2 {
+  display: flex;
+  flex-direction: column;
+  
+    background-color: rosybrown;
+  
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  
+  padding: 20px;
+}
+
+/* Main form container */
+.container-1 {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 40px;
+}
+
+/* Form styling */
+#form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Form labels */
+label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Form inputs */
+input[type="text"] {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+}
+
+/* Submit button styling */
+.btn {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for the title for the submitted users */
+h1 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Container for user cards */
+.m-user {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Individual user card styling */
+.main-user {
+  background-color: #fff;
+  padding: 20px;
+  width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.main-user:hover {
+  transform: translateY(-5px);
+}
+
+/* Styling for user images */
+.main-user img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* User name styling */
+.main-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+/* User age and job styling */
+.age, .job {
+  font-size: 1rem;
+  color: #666;
+}

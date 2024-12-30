@@ -1,4 +1,4 @@
-
+console.log("hii");
 const mainDiv = document.getElementById("Cards");
 const loader = document.getElementById("loader"); // Ensure you have a loader element
 

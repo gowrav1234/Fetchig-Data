@@ -45,5 +45,9 @@ const createCards = (data) => {
         mainDiv.innerHTML += htmlCard;  // Append the card
     }
 };
-const allProducts = JSON.parse(localStorage.getItem("data")) || asyncFunc()
- createCards(allProducts);
+// const allProducts = JSON.parse(localStorage.getItem("data")) || asyncFunc()
+//  createCards(allProducts);
+document.addEventListener("DOMContentLoaded", () => {
+    const allProducts = JSON.parse(localStorage.getItem("data")) || asyncFunc()
+    createCards(allProducts)
+  });
